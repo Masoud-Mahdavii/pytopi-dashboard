@@ -1,4 +1,4 @@
 import streamlit as st
 
-st.title('Pytopia Dashboard')
+st.title(':zap: Pytopia Dashboard')
 
