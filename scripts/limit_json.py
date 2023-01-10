@@ -11,6 +11,6 @@ def write_json(data, file):
     with open(file, 'w') as f:
         json.dump(data, f, indent=4)
 
-data = read_json(Path('./data/pytopi.json'))
+data = read_json(Path('./data/pytopi_dashboard.json'))
 data['messages'] = data['messages'][:1000]
 write_json(data, Path('./data/pytopi_short.json'))
