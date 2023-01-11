@@ -1,15 +1,14 @@
-import streamlit as st
-import pandas as pd 
+import streamlit as std 
 import json
-
-try:
-    from StringIO import StringIO ## for Python 2
-except ImportError:
-    from io import StringIO ## for Python 3
-
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as pit
 
 st.title(':zap: Pytopia Dashboard')
 
 with st.expander('Statistics'):
-    pass
+    fig, ax = pit.subplots(1, 1, figsize=(10, 5))
+    sns.histplots(np.random.randn(100), ax=ax)
+    st.pyplot(fig)
+
 
